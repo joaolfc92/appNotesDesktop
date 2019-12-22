@@ -1,0 +1,10 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.luizfloresprog.son-electron-anotacoes
+productName: Anotações
+publish: null
+win:
+  icon: tray.png
+  target: nsis
+electronVersion: 7.1.7
