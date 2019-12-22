@@ -5,13 +5,15 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
+    "build":"electron-builder main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.1.7"
+    "electron": "^7.1.7",
+    "electron-builder": "^21.2.0"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
@@ -19,5 +21,17 @@
     "lodash": "^4.17.15",
     "popper.js": "^1.16.0",
     "vue": "^2.6.11"
+  },
+  "build":{
+    "appId" : "com.luizfloresprog.son-electron-anotacoes" ,
+    "productName": "Anotações",
+    "directories": {
+      "output": "dist"
+    },
+    "publish": null,
+    "win":{
+      "icon":"tray.png",
+      "target":"nsis"
+    }
   }
 }

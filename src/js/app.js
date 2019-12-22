@@ -8,7 +8,7 @@ const app = new Vue({
 	},
 	methods:{
 		remove: function(){
-			for(let i = 0; i<this.notes.lengh; i++){
+			for(let i = 0; i <this.notes.lengh; i++){
 				if(this.notes[i].content == ''){
 					this.notes.splice(i,1)
 				}
